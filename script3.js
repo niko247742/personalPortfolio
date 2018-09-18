@@ -18,7 +18,8 @@ let bannerStatus = 1;
 let bannerTimer = 4000;   //4 sec in javascript
 
  window.onload = function () {
-     document.getElementsByClassName("imgban").style.display="none";
+     bannerLoop();
+    //  document.getElementsByClassName("imgban").style.display="none";
 }
 let startBannerLoop = setInterval(function() {
     bannerLoop();
@@ -34,14 +35,11 @@ function bannerLoop() {
             document.getElementById("imgban2").style.zIndex = "1100";
             document.getElementById("imgban10").style.right = "1200px";
             document.getElementById("imgban10").style.zIndex = "500";
-
-
-
-        }, 500);
+        }, 1000);
 
         setTimeout(function(){
             document.getElementById("imgban2").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 2;
     }
     else if (bannerStatus === 2) {
@@ -59,10 +57,10 @@ function bannerLoop() {
             document.getElementById("imgban1").style.right = "1200px";
             document.getElementById("imgban1").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban3").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 3;
     }
     else if (bannerStatus === 3) {
@@ -80,10 +78,10 @@ function bannerLoop() {
             document.getElementById("imgban2").style.right = "1200px";
             document.getElementById("imgban2").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban4").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 4;
     }
     else if (bannerStatus === 4) {
@@ -101,10 +99,10 @@ function bannerLoop() {
             document.getElementById("imgban3").style.right = "1200px";
             document.getElementById("imgban3").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban5").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 5;
     }
     else if (bannerStatus === 5) {
@@ -122,10 +120,10 @@ function bannerLoop() {
             document.getElementById("imgban4").style.right = "1200px";
             document.getElementById("imgban4").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban6").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 6;
     }
     else if (bannerStatus === 6) {
@@ -143,10 +141,10 @@ function bannerLoop() {
             document.getElementById("imgban5").style.right = "1200px";
             document.getElementById("imgban5").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban7").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 7;
     }
     else if (bannerStatus === 7) {
@@ -164,10 +162,10 @@ function bannerLoop() {
             document.getElementById("imgban6").style.right = "1200px";
             document.getElementById("imgban6").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban8").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 8;
     }
     else if (bannerStatus === 8) {
@@ -185,10 +183,10 @@ function bannerLoop() {
             document.getElementById("imgban7").style.right = "1200px";
             document.getElementById("imgban7").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban9").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 9;
     }
     else if (bannerStatus === 9) {
@@ -206,10 +204,10 @@ function bannerLoop() {
             document.getElementById("imgban8").style.right = "1200px";
             document.getElementById("imgban8").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban10").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 10;
     }
     else if (bannerStatus === 10) {
@@ -227,10 +225,10 @@ function bannerLoop() {
             document.getElementById("imgban9").style.right = "1200px";
             document.getElementById("imgban9").style.zIndex = "500";
     
-        }, 500);
+        }, 1000);
         setTimeout(function(){
             document.getElementById("imgban1").style.opacity = "1";
-        }, 1000);
+        }, 1500);
         bannerStatus = 1;
     }
 }
