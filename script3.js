@@ -16,8 +16,9 @@
 
 let bannerStatus = 1;
 let bannerTimer = 4000;   //4 sec in javascript
-window.onload = function () {
-    bannerLoop();
+
+ window.onload = function () {
+     document.getElementsByClassName("imgban").style.display="none";
 }
 let startBannerLoop = setInterval(function() {
     bannerLoop();
@@ -31,8 +32,11 @@ function bannerLoop() {
             document.getElementById("imgban1").style.zIndex = "1000";
             document.getElementById("imgban2").style.right = "-1200px";
             document.getElementById("imgban2").style.zIndex = "1100";
-            document.getElementById("imgban3").style.right = "1200px";
-            document.getElementById("imgban3").style.zIndex = "500";
+            document.getElementById("imgban10").style.right = "1200px";
+            document.getElementById("imgban10").style.zIndex = "500";
+
+
+
         }, 500);
 
         setTimeout(function(){
@@ -63,18 +67,165 @@ function bannerLoop() {
     }
     else if (bannerStatus === 3) {
 
-        document.getElementById("imgban1").style.opacity = "0";
+        document.getElementById("imgban4").style.opacity = "0";
 
         setTimeout(function(){
 
             document.getElementById("imgban3").style.right = "0px";
             document.getElementById("imgban3").style.zIndex = "1000";
 
-            document.getElementById("imgban1").style.right = "-1200px";
-            document.getElementById("imgban1").style.zIndex = "1100";
+            document.getElementById("imgban4").style.right = "-1200px";
+            document.getElementById("imgban4").style.zIndex = "1100";
 
             document.getElementById("imgban2").style.right = "1200px";
             document.getElementById("imgban2").style.zIndex = "500";
+    
+        }, 500);
+        setTimeout(function(){
+            document.getElementById("imgban4").style.opacity = "1";
+        }, 1000);
+        bannerStatus = 4;
+    }
+    else if (bannerStatus === 4) {
+
+        document.getElementById("imgban5").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("imgban4").style.right = "0px";
+            document.getElementById("imgban4").style.zIndex = "1000";
+
+            document.getElementById("imgban5").style.right = "-1200px";
+            document.getElementById("imgban5").style.zIndex = "1100";
+
+            document.getElementById("imgban3").style.right = "1200px";
+            document.getElementById("imgban3").style.zIndex = "500";
+    
+        }, 500);
+        setTimeout(function(){
+            document.getElementById("imgban5").style.opacity = "1";
+        }, 1000);
+        bannerStatus = 5;
+    }
+    else if (bannerStatus === 5) {
+
+        document.getElementById("imgban6").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("imgban5").style.right = "0px";
+            document.getElementById("imgban5").style.zIndex = "1000";
+
+            document.getElementById("imgban6").style.right = "-1200px";
+            document.getElementById("imgban6").style.zIndex = "1100";
+
+            document.getElementById("imgban4").style.right = "1200px";
+            document.getElementById("imgban4").style.zIndex = "500";
+    
+        }, 500);
+        setTimeout(function(){
+            document.getElementById("imgban6").style.opacity = "1";
+        }, 1000);
+        bannerStatus = 6;
+    }
+    else if (bannerStatus === 6) {
+
+        document.getElementById("imgban7").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("imgban6").style.right = "0px";
+            document.getElementById("imgban6").style.zIndex = "1000";
+
+            document.getElementById("imgban7").style.right = "-1200px";
+            document.getElementById("imgban7").style.zIndex = "1100";
+
+            document.getElementById("imgban5").style.right = "1200px";
+            document.getElementById("imgban5").style.zIndex = "500";
+    
+        }, 500);
+        setTimeout(function(){
+            document.getElementById("imgban7").style.opacity = "1";
+        }, 1000);
+        bannerStatus = 7;
+    }
+    else if (bannerStatus === 7) {
+
+        document.getElementById("imgban8").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("imgban7").style.right = "0px";
+            document.getElementById("imgban7").style.zIndex = "1000";
+
+            document.getElementById("imgban8").style.right = "-1200px";
+            document.getElementById("imgban8").style.zIndex = "1100";
+
+            document.getElementById("imgban6").style.right = "1200px";
+            document.getElementById("imgban6").style.zIndex = "500";
+    
+        }, 500);
+        setTimeout(function(){
+            document.getElementById("imgban8").style.opacity = "1";
+        }, 1000);
+        bannerStatus = 8;
+    }
+    else if (bannerStatus === 8) {
+
+        document.getElementById("imgban9").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("imgban8").style.right = "0px";
+            document.getElementById("imgban8").style.zIndex = "1000";
+
+            document.getElementById("imgban9").style.right = "-1200px";
+            document.getElementById("imgban9").style.zIndex = "1100";
+
+            document.getElementById("imgban7").style.right = "1200px";
+            document.getElementById("imgban7").style.zIndex = "500";
+    
+        }, 500);
+        setTimeout(function(){
+            document.getElementById("imgban9").style.opacity = "1";
+        }, 1000);
+        bannerStatus = 9;
+    }
+    else if (bannerStatus === 9) {
+
+        document.getElementById("imgban10").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("imgban9").style.right = "0px";
+            document.getElementById("imgban9").style.zIndex = "1000";
+
+            document.getElementById("imgban10").style.right = "-1200px";
+            document.getElementById("imgban10").style.zIndex = "1100";
+
+            document.getElementById("imgban8").style.right = "1200px";
+            document.getElementById("imgban8").style.zIndex = "500";
+    
+        }, 500);
+        setTimeout(function(){
+            document.getElementById("imgban10").style.opacity = "1";
+        }, 1000);
+        bannerStatus = 10;
+    }
+    else if (bannerStatus === 10) {
+
+        document.getElementById("imgban1").style.opacity = "0";
+
+        setTimeout(function(){
+
+            document.getElementById("imgban10").style.right = "0px";
+            document.getElementById("imgban10").style.zIndex = "1000";
+
+            document.getElementById("imgban1").style.right = "-1200px";
+            document.getElementById("imgban1").style.zIndex = "1100";
+
+            document.getElementById("imgban9").style.right = "1200px";
+            document.getElementById("imgban9").style.zIndex = "500";
     
         }, 500);
         setTimeout(function(){
@@ -85,24 +236,3 @@ function bannerLoop() {
 }
 
 
-     // document.getElementById("imgban3").style.right = "-1200px";
-            // document.getElementById("imgban3").style.zIndex = "1200";
-
-            // document.getElementById("imgban4").style.right = "-1200px";
-            // document.getElementById("imgban4").style.zIndex = "1300";
-
-
-            // document.getElementById("imgban5").style.right = "-1200px";
-            // document.getElementById("imgban5").style.zIndex = "1400";
-
-            // document.getElementById("imgban6").style.right = "-1200px";
-            // document.getElementById("imgban6").style.zIndex = "1500";
-
-            // document.getElementById("imgban7").style.right = "-1200px";
-            // document.getElementById("imgban7").style.zIndex = "1600";
-
-            // document.getElementById("imgban8").style.right = "-1200px";
-            // document.getElementById("imgban8").style.zIndex = "1700";
-
-            // document.getElementById("imgban9").style.right = "-1200px";
-            // document.getElementById("imgban9").style.zIndex = "500";
