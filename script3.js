@@ -19,11 +19,22 @@ let bannerTimer = 4000;   //4 sec in javascript
 
  window.onload = function () {
      bannerLoop();
-    //  document.getElementsByClassName("imgban").style.display="none";
 }
 let startBannerLoop = setInterval(function() {
     bannerLoop();
 }, bannerTimer);
+
+        //stops loop when mouse enters field
+document.getElementById("main-banner").onmouseenter = function () {
+    clearInterval(startBannerLoop);
+}
+        //restarts the loop when mouse leaves
+document.getElementById("main-banner").onmouseleave = function () {
+    startBannerLoop = setInterval(function() {
+        bannerLoop();
+    }, bannerTimer);
+    }
+
 
 function bannerLoop() {
     if (bannerStatus === 1) {
