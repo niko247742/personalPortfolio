@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script|Josefin+Sans|Rouge+Script" rel="stylesheet">
+        <title>Macie Grant - Web Developer</title>
+    </head>
+    <body>
+
+        <header>
+            <span class="open-side">
+                <a href="#" onclick="openSideMenu()"><i id="hamburger" class="fas fa-bars"></i></a>   
+            </span>
+            <div class="heroImg" id="home">
+                <h1 id="myName">Macie Grant</h1>
+                <p id="jobTitle" class="headerP">Web Developer & Designer</p>
+            </div>
+            <nav class="navbar" id="navbar"> 
+                <ul id="navlink">
+                    <li><a class="navlink" href="#home">Home</a></li>
+                    <li><a class="navlink" href="#aboutMe">About Me</a></li>
+                    <li><a class="navlink" href="#skills">Skills</a></li>
+                    <li><a class="navlink" href="#portfolio">Portfolio</a></li>
+                    <li><a class="navlink" href="#experience">Experience</a></li>
+                    <li><a class="navlink" href="#contactMe">Contact</a></li>
+                </ul>     
+            </nav>
+           
+            <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+                <a href="#home">Home</a>
+                <a href="#aboutMe">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#photo">Photography</a>
+                <a href="#fosterBlock">IMON</a>
+                <a href="#contactMe">Contact</a>
+            </div>
+        </header>
+
+
+        <section class = "aboutMe">
+            <div class="wrapper" id="aboutMe">
+                <div class="page" id="aboutMeBlock">
+                    <h2 class="h2aboutMe">About Me</h2>
+                    <span ><p class="quote">"<span class="firstletter">Y</span>ou are <span class="firstletter">B</span>raver than you <span class="firstletter">B</span>elieve, <span class="firstletter">S</span>tronger than you <span class="firstletter">S</span>eem and <span class="firstletter">S</span>marter than you <span class="firstletter">T</span>hink" <div>-- A.A Milne</div></p></span>
+                </div>
+                <div class="aboutMeIntro page">
+                    <img class="img img1">  
+                    <p class="img1text">I am relatively new to the developing world, begining my journey in May of 2018. I have a passion for learning, art and a love of animals. My hobbies include photography, gardening, drawing and working with a local rescue, IMON, to foster kittens. I have a very strong work ethic with an eye for detail and would be an extremely valuable edition to any team.</p>
+                </div>
+                <div class="page">
+                    <div class="winnieBlock flexContainer">
+                        <p class = "img2text" id="winnie">My beautiful English Cocker Spaniel, <br><span class="petName">Winnie the Pooch</span>.</p>  
+                        <img class="img img2">
+                    </div>
+                </div>
+                <div class = "page miloBlock">
+                    <div class="flexContainerMilo">
+                        <p class="img3text" id="milo">My distinguished black rescue, <br><span class="petName">Milo</span>.</p>  
+                        <img class="img img3">
+                    </div>
+                </div> 
+            </div>
+            <div class="fosterWrapper flexContainer" id="fosterBlock">
+                    <div class="aboutIMON">
+                        <h2 class="h2aboutMe">Fosters</h2>
+                        <p class='img4text'>My current fosters are avaliable for adoption through the cat rescue <a href="https://www.itsmeowornevertally.com/" class="imon">IMON</a>. It's Meow or Never is a completely volunteer based rescue that focuses on TNR in the Tallahassee and South Georgia area. They recieve no government funding and rely on the generosity of the community.</p> 
+                        <div class="button"><button id="donateBtn">Donate</button></div>
+
+                    </div>
+                    <div id="currentFoster1">
+                        <img class="img img4">
+                        <p class="fosterText"><span class="imon">Sheba</span> - A beautiful 3 month old female calico. She is playful and fiesty yet loving.</p>
+                    </div>
+                    <div id="currentFoster2">
+                        <img class="img img5">
+                        <p class="fosterText"><span class="imon">Kung Pow</span> - A handsome 3 month old male tuxedo. He is a complete cuddle bug, a lap kitty for sure, but can still have a wild side.</p>
+                    </div>
+                    <div id="currentFoster3">
+                        <img class="img img6">
+                        <p class="fosterText"><span class="imon">Mad Max</span> - A handsome 3 month old solid black male. He is a true hunter at heart, attacking anything that moves...until its time to cuddle.</p>
+                    </div>
+                    <div class="adoptMeBlock">
+                        <div class="button"><button id="btn">Adopt Me</button></div>
+                        <div class="adoptionInfo">
+                            <p>The adoption fee for each is $100. They are fixed(spayed/neutered), microchipped, FELV negative, and up to date on vaccines, including rabbies and dewormed.</p>
+                        </div>
+                    </div>   
+                </div>   
+        </section>
+
+
+        <section class = "techSkills" id="skills">
+            <h2 class="skillsH2">Skills</h2>
+            <div>
+                <p class="skillsP">I have a good foundation of HTML, ES6, CSS3, GitHub, NPM and Photoshop</p>
+                <i class="fab fa-html5 skillsi"></i>
+                <i class="fas fa-camera skillsi"></i>
+                <i class="fab fa-js-square skillsi"></i>
+                <i class="fab fa-css3-alt skillsi"></i>
+                <i class="fab fa-github skillsi"></i>
+                <i class="fab fa-npm skillsi"></i>
+                <i class="fas fa-terminal skillsi"></i>
+            </div>
+            <div>
+                <p class="skillsP">I am currently learning the MERN stack, SASS and Bootstrap</p>
+                <i class="fas fa-leaf bottomI skillsi"></i> 
+                <i class="fab fa-node bottomI skillsi"></i>
+                <i class="fab fa-react bottomI skillsi"></i> 
+                <i class="fab fa-sass bottomI skillsi"></i>       
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <a href="https://github.com/niko247742"><i class="fab fa-github skillsi"></i></a>
+            <a href="https://www.freecodecamp.org/macie"><i class="fab fa-free-code-camp skillsi"></i></a>
+            <div class="photographyBlock" id="photo">
+                <h2>Photography</h2>
+                <div class="main-banner" id="main-banner">
+                    <div class="imgban" id="imgban10"></div>
+                    <div class="imgban" id="imgban9"></div>
+                    <div class="imgban" id="imgban8"></div>
+                    <div class="imgban" id="imgban7"></div>
+                    <div class="imgban" id="imgban6"></div>
+                    <div class="imgban" id="imgban5"></div>
+                    <div class="imgban" id="imgban4"></div>
+                    <div class="imgban" id="imgban3"></div>
+                    <div class="imgban" id="imgban2"></div>
+                    <div class="imgban" id="imgban1"></div>
+                </div>
+                <a><h4 class="moreImages">More Images</h4></a>
+            </div>
+        </section>
+        <section class="education">
+            <h2>Education</h2>
+                <p>Bachelors in Biology and Psychology with a Minor in Chemistry from Florida State University 2010</p>
+        </section>
+        <section class="experience wrapper2" id="experience">
+            <!-- <div class="wrapper2"> -->
+                <h2 class="expTitle">Experience</h2>
+                <div class="experienceBlock b1">
+                    <div class="turquoiseBackground">
+                        <h3 class="h3wrap1">Retail Associate at Paws Pet Boutique</h3>
+                        <h4 class="h4wrap1">October 2017 to present tallahassee, Fl</h4>
+                    </div>
+                    <p id="pWrap1">This adorable family owned buisness is my current place of employment. As a small buisness the focus is the customer, providing excellent customer service and making sure they are a return customer. Constantly re-merchandising parts of the store, always trying to increase sales. Using photoshop to design signage for the store. Other duties include: managing quickbooks, weekly ordering, organizing adoption events and helping in the grooming department.</p>
+                </div>
+                <div class="experienceBlock b2">
+                    <div class="greyBackground">
+                        <h3 class="h3wrap2">Vet Technicican at Capital Veterinary Specialists</h3>
+                        <h4 class="h4wrap2">June 2016 to August 2017 Tallahassee, Fl</h4>
+                    </div>
+                    <p id="pWrap2">A desire to become a Veterinarian led me to Capital Veterinary Specialists. An amazing place where I learned to take vitals, restrain animals, draw blood and place catheters, take x-rays and many other skills. As an animal lover, seeing pets at their worst took an emotional toll. My year here taught me so much and was another step in my journey.</p>            
+                </div>
+                <div class="experienceBlock b3">
+                    <div class="turquoiseBackground">
+                        <h3 class="h3wrap3">Preschool Teacher at Scottsdale Academy</h3>
+                        <h4 class="h4wrap3">July 2015 to January 2016 Tallahassee, Fl</h4>
+                    </div>
+                    <p id="pWrap3">Responsible for a class of twenty 3-year-olds, working with a co-teacher to deisgn a curriculm that promotes an engaging learning environment.</p>      
+                </div>
+                <div class="experienceBlock b4">
+                    <div class="greyBackground">
+                        <h3 class="h3wrap4">Merchandising Manager at Old Navy</h3>
+                        <h4 class="h4wrap4">February 2013 to May 2015 Tallahassee, Fl</h4>
+                    </div>
+                    <p class="pWrap4">I started as a sales associate, then got promoted to a supervisor position and finally to a managment position. My main duties as a sales associate included providing excellent customer service, checking out clients, upselling products. As a back of house supervisor I was responsible for organising all backstock and replenishing the floor as needed. As the merdandising manager my focus increasing sales through strategic product placement. Other responsibilities indluded: closing the store, training new employees, loss prevention, customer conflict resolution, running bi-weekly shipments and scheduling based on sales and product load.</p>            
+                </div>
+                <div class="experienceBlock b5" id="lastExp">
+                    <div class="turquoiseBackground lastExp">
+                        <h3 class="h3wrap5">Secretary at Gus Machado Ford</h3>
+                        <h4 class="h4wrap5">February 2008 to August 2010 Miami, Fl</h4>
+                    </div>
+                    <p id="pWrap5">My first job was as a receptionist at a car dealership in Miami. My main duties included: answering and transferring phone calls, accepting down payments for car purchases and making nightly deposits. I left this position when I moved to Tallahassee to attend the Florida State University.</p>            
+                </div>
+            <!-- </div> -->
+        </section>
+        <footer id="contactMe">
+            <h2>Contact Me</h2>
+            <span class="footerQuote">“The greatness of a nation can be judged by the way its animals are treated.” <br>--Mahatma Gandhi</span>
+            <div>
+                <a href="https://github.com/niko247742"><i class="fab fa-github skillsi"></i></a>
+                <a href="https://www.freecodecamp.org/macie"><i class="fab fa-free-code-camp skillsi"></i></a>
+                <i class="fas fa-at skillsi"></i>
+            </div>
+            <span>&copy; 2018 {T & M} Productions</span>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
